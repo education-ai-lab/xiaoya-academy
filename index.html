@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#7c3aed" />
+<meta name="description" content="小芽学园：给 5–7 岁孩子的每日学习计划，拼音、识字、古诗、口算、数独、英语、运动与学习数据。" />
+<title>小芽学园 · 每日学习计划</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%A3%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="assets/css/app.css" />
+</head>
+<body>
+  <div class="app" id="app">
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-logo" id="brandLogo">🐣</div>
+        <div class="brand-text">
+          <strong id="brandName">小芽学园</strong>
+          <span id="brandTag">每天一点，慢慢长大</span>
+        </div>
+      </div>
+      <nav class="nav" id="nav" aria-label="学习模块"></nav>
+      <div class="sidebar-foot">
+        <div class="mini-card">
+          <div class="mini-row"><span>今日打卡</span><b id="footCheckins">0</b></div>
+          <div class="mini-row"><span>累计积分</span><b id="footPoints">0</b></div>
+          <div class="mini-bar"><i id="footBar"></i></div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="icon-btn nav-toggle" id="navToggle" aria-label="打开菜单">☰</button>
+        <div class="topbar-title">
+          <span id="crumb">拼音训练</span>
+          <em>· 每日学习计划</em>
+        </div>
+        <div class="topbar-right">
+          <div class="chip chip-fire" title="连续打卡天数">🔥 <b id="chipStreak">0</b> 天</div>
+          <div class="chip chip-star" title="累计积分">⭐ <b id="chipPoints">0</b></div>
+          <button class="chip chip-btn" id="btnReport" title="学习报告">📊<span class="chip-report-text"> 报告</span></button>
+          <button class="chip chip-btn" id="btnGuide" title="使用讲解">💡<span class="chip-guide-text"> 讲解</span></button>
+          <button class="icon-btn" id="btnRefresh" title="刷新数据">↻</button>
+        </div>
+      </header>
+      <div class="view" id="view"></div>
+    </main>
+  </div>
+
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <div class="modal-root" id="modalRoot"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/store.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/speech.js"></script>
+  <script src="assets/js/modules/pinyin.js"></script>
+  <script src="assets/js/modules/chars.js"></script>
+  <script src="assets/js/modules/poem.js"></script>
+  <script src="assets/js/modules/recite.js"></script>
+  <script src="assets/js/modules/math.js"></script>
+  <script src="assets/js/modules/sudoku.js"></script>
+  <script src="assets/js/modules/logic.js"></script>
+  <script src="assets/js/modules/focus.js"></script>
+  <script src="assets/js/modules/phonics.js"></script>
+  <script src="assets/js/modules/raz.js"></script>
+  <script src="assets/js/modules/english.js"></script>
+  <script src="assets/js/modules/counter.js"></script>
+  <script src="assets/js/modules/fitness.js"></script>
+  <script src="assets/js/modules/vestibular.js"></script>
+  <script src="assets/js/modules/swim.js"></script>
+  <script src="assets/js/modules/drum.js"></script>
+  <script src="assets/js/modules/report.js"></script>
+  <script src="assets/js/modules/science.js"></script>
+  <script src="assets/js/modules/lab.js"></script>
+  <script src="assets/js/modules/calendar.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
