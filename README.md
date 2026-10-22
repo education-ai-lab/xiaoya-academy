@@ -4,6 +4,14 @@
 
 **所有内容、题目、统计都在本地运行**：不需要账号，不联网，不上传任何数据。
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-7c3aed.svg?style=flat-square)](LICENSE)
+![Platform](https://img.shields.io/badge/Windows%20%7C%20macOS-%E5%8F%AF%E7%94%A8-333.svg?style=flat-square)
+![No dependencies](https://img.shields.io/badge/%E7%BA%AF%E9%9D%99%E6%80%81-%E9%9B%B6%E4%BE%9D%E8%B5%96-10b981.svg?style=flat-square)
+
+**在线直接使用**：<https://c19519980404-beep.github.io/xiaoya-academy/>
+
+![界面预览](docs/screenshot.jpg)
+
 ---
 
 ## 一、快速开始
@@ -84,13 +92,14 @@
 
 ---
 
-## 五、部署到线上（可选）
+## 五、部署到线上
 
 这是纯静态站点，不需要后端、不需要数据库，任何静态托管都能放：
 
-- **Vercel / Netlify**：把整个文件夹拖进去即可，入口 `index.html`。
-- **GitHub Pages**：推到仓库，Settings → Pages 选择根目录。
-- **内网 / 自己的服务器**：把文件夹丢到 nginx 的 html 目录。
+- **GitHub Pages（已开启）**：本仓库已配置 Pages，地址 <https://c19519980404-beep.github.io/xiaoya-academy/>。
+  Fork 后到 Settings → Pages，Source 选择 `Deploy from a branch` → `main` → `/ (root)` 即可得到自己的链接。
+- **Vercel / Netlify**：导入仓库或把整个文件夹拖进去，入口 `index.html`，无需构建命令。
+- **内网 / 自己的服务器**：把文件夹放到 nginx 的 html 目录。
 - **本机临时分享**：在文件夹里执行 `python3 -m http.server 8080` 或 `npx serve .`。
 
 部署后同一个链接在 Windows、macOS、手机、平板上都能打开，数据各自保存在各自设备的浏览器里。
@@ -147,3 +156,26 @@
 - 口算先求准，再求快；正确率稳定在 90% 以上再提速。
 - 错题本每周回看一次，比重做十套新题更有用。
 - 打卡是给坚持的奖励，不要因为断一天就放弃。
+
+---
+
+## 九、开源协议
+
+本项目使用 [MIT License](LICENSE)，你可以自由使用、修改、二次分发，包括商业用途，保留版权声明即可。
+
+如果这个项目帮到了你，欢迎点一个 Star ⭐，也欢迎把它改成适合自己家孩子的版本。
+
+## 十、参与贡献
+
+- **加内容**：所有课程内容集中在 `assets/js/data.js`，按现有格式补充拼音、识字、古诗、题库、英文短文、运动项目、科普问答即可，不需要改逻辑。
+- **加模块**：在 `assets/js/modules/` 新建文件，用 `Modules.register(id, { icon, title, subtitle, badge, render })` 注册，再到 `index.html` 引入脚本、`assets/js/app.js` 的 `NAV` 里加一项。
+- **改样式**：全部样式在 `assets/css/app.css`，颜色集中在 `:root` 变量里，改一处即可换主题。
+- **提交前自测**：用 Chrome 打开 `index.html`，把改动的模块点一遍，确认控制台没有报错。
+
+## 十一、适合谁用
+
+- 家里有 5～7 岁孩子、想安排每日学习但不想下载一堆 App 的家长
+- 想给孩子做一个专属学习页面的老师
+- 想找一个「纯前端 + localStorage」完整案例的开发者
+
+没有账号体系、没有埋点、没有广告，也不需要联网。
