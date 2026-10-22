@@ -8,7 +8,7 @@
 ![Platform](https://img.shields.io/badge/Windows%20%7C%20macOS-%E5%8F%AF%E7%94%A8-333.svg?style=flat-square)
 ![No dependencies](https://img.shields.io/badge/%E7%BA%AF%E9%9D%99%E6%80%81-%E9%9B%B6%E4%BE%9D%E8%B5%96-10b981.svg?style=flat-square)
 
-**在线直接使用**：<https://c19519980404-beep.github.io/xiaoya-academy/>
+**在线直接使用**：<https://education-ai-lab.github.io/xiaoya-academy/>
 
 ![界面预览](docs/screenshot.jpg)
 
@@ -96,7 +96,7 @@
 
 这是纯静态站点，不需要后端、不需要数据库，任何静态托管都能放：
 
-- **GitHub Pages（已开启）**：本仓库已配置 Pages，地址 <https://c19519980404-beep.github.io/xiaoya-academy/>。
+- **GitHub Pages（已开启）**：本仓库已配置 Pages，地址 <https://education-ai-lab.github.io/xiaoya-academy/>。
   Fork 后到 Settings → Pages，Source 选择 `Deploy from a branch` → `main` → `/ (root)` 即可得到自己的链接。
 - **Vercel / Netlify**：导入仓库或把整个文件夹拖进去，入口 `index.html`，无需构建命令。
 - **内网 / 自己的服务器**：把文件夹放到 nginx 的 html 目录。
